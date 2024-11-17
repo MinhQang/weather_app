@@ -1,5 +1,5 @@
 const getWeather = async (city, country) => {
-    const Api_Key = `34e3dbd95142e8bb5d3c887dc1964cd4`;
+    const Api_Key = process.env.REACT_APP_API_KEY;
 
     if (!city || !country) {
         return { error: "Vui lòng nhập đủ thông tin..." };
