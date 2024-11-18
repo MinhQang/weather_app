@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import View from './Components/view';
-
+import Navbar from './Components/Controller/navbar';
 class App extends React.Component {
 
     render() {
         return (
             <div>
-                <View/>
+                <Navbar />
             </div>
         );
     }

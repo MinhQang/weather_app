@@ -1,8 +1,9 @@
 import React from "react";
+import WeatherForm from "../weatherCheck/weatherForm";
 
 const Check = () => {
     return (
-        <h1>Kiểm tra thời tiết</h1>
+        <WeatherForm />
     )
 }
 

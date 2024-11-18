@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Link } from 'react-router-dom';
 
 const Titles = () => {
-    const [open, setOpen] = useState(false);
+    const [setOpen] = useState(false);
         return(
             <div>
                 <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -13,19 +13,19 @@ const Titles = () => {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                            <Link className="navbar-brand" to="../src/Components/view.js">Weather</Link>
+                            <Link className="navbar-brand" to="/">Weather</Link>
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link className="nav-link" aria-current="page" onClick={() => setOpen(false)}>Tin tức</Link>
+                                    <Link className="nav-link" aria-current="page" to="/news" onClick={() => setOpen(false)}>Tin tức</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" aria-current="page" onClick={() => setOpen(false)}>Bản đồ</Link>
+                                    <Link className="nav-link" aria-current="page" to="/map" onClick={() => setOpen(false)}>Bản đồ</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" aria-current="page" onClick={() => setOpen(false)}>Kiểm tra</Link>
+                                    <Link className="nav-link" aria-current="page" to="/check" onClick={() => setOpen(false)}>Kiểm tra</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" aria-current="page" onClick={() => setOpen(false)}>Xu hướng</Link>
+                                    <Link className="nav-link" aria-current="page" to="/trend" onClick={() => setOpen(false)}>Xu hướng</Link>
                                 </li>
                             </ul>
                             <form className="d-flex" role="search">
