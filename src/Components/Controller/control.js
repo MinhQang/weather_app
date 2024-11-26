@@ -1,25 +1,24 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import Titles from "../header/titles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import News from "./news";
 import Map from "./map";
 import Check from "./check";
 import Trend from "./trend";
+import Titles from "../header/titles";
 
-class Navbar extends React.Component {
+class Control extends React.Component {
 
     render(){
-
         return(
             <div>
+                <Titles />
                 <BrowserRouter>
-                    <Titles />
                     <Routes>
                         {/* <Route path="/" element={<Home />}/> */}
                         <Route path="/news" element={<News />}/>
-                        <Route path="/map" element={<Map />}/>   
+                        <Route path="/map" element={<Map  />}/>   
                         <Route path="/check" element={<Check />}/>
                         <Route path="/trend" element={<Trend />}/>
                     </Routes>
@@ -29,4 +28,4 @@ class Navbar extends React.Component {
     }
 }
 
-export default Navbar;
+export default Control;

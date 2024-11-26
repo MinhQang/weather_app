@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import Form from '../header/form';
 import Weather from './weather';
 import getWeather from '../../Services/getWeather.js';
+import CheckForm from './checkForm.js';
 
 class WeatherForm extends React.Component {
     state = {
@@ -58,7 +58,7 @@ class WeatherForm extends React.Component {
         return(
 
             <div className="container mt-4">                 
-                    <Form loadWeather={this.handleGetWeather}/>
+                    <CheckForm loadWeather={this.handleGetWeather}/>
                     <Weather
                         temperature={this.state.temperature}
                         city={this.state.city}

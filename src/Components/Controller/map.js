@@ -1,8 +1,9 @@
 import React from "react";
+import WeatherMap from "../Map/weatherMap";
 
 const Map = () => {
     return (
-        <h1>Bản đồ</h1>
+        <WeatherMap />
     )
 }
 
